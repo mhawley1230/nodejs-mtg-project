@@ -5,9 +5,13 @@ const express = require('express'),
       path = require('path'),
       dust = require('dustjs-helpers'),
       db = require('pg'),
-      dotenv = require('dotenv/config');
+      dotenv = require('dotenv/config'),
+      { Client } = require('pg');
 
 // postgres logic pool and connectionString
+const client = new Client({
+
+});
 
 // Assign Dust Engine to .dust files
 app.engine('dust', cons.dust);
