@@ -33,7 +33,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
 app.get('/', function(req, res) {
-  res.render('index');
+  client.query('SELECT * FROM events', function(err, result) {
+    if (err) {
+      return console.error('error fetching client from pool\n', err);
+    }
+    res.render('index', {events: result.rows});
+  });
 });
 
 // Server

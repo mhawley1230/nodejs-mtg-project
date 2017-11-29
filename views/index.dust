@@ -1,7 +1,14 @@
 {>"layout" /}
 
 {<body}
-<nav class="navbar navbar-light bg-dark">
-  <span class="navbar-brand mb-0 h1"><strong id="navbar-title">Title</strong></span>
-</nav>
+  <nav class="navbar navbar-light bg-dark">
+    <span class="navbar-brand mb-0 h1"><strong id="navbar-title">Title</strong></span>
+  </nav>
+
+  {#events}
+    <br />
+    <div class="well">
+      <h4>{name}</h4>
+    </div>
+  {/events}
 {/body}
