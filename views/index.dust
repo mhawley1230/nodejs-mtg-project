@@ -1,5 +1,7 @@
 {>"layout" /}
 
 {<body}
-<div class="title pull-left">Hello, world</div>
+<nav class="navbar navbar-light bg-dark">
+  <span class="navbar-brand mb-0 h1"><strong id="navbar-title">Title</strong></span>
+</nav>
 {/body}
