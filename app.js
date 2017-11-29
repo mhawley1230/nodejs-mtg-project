@@ -4,7 +4,8 @@ const express = require('express'),
       cons = require('consolidate'),
       path = require('path'),
       dust = require('dustjs-helpers'),
-      { Pool } = require('pg');
+      db = require('pg'),
+      dotenv = require('dotenv/config');
 
 // postgres logic pool and connectionString
 
