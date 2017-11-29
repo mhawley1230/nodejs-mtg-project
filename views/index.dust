@@ -1,0 +1,5 @@
+{>"layout" /}
+
+{<body}
+<div class="title pull-left">Hello, world</div>
+{/body}
