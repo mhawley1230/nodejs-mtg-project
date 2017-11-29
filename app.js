@@ -10,8 +10,12 @@ const express = require('express'),
 
 // postgres logic pool and connectionString
 const client = new Client({
-
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASS
 });
+client.connect();
 
 // Assign Dust Engine to .dust files
 app.engine('dust', cons.dust);
