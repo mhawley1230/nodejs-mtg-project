@@ -7,8 +7,21 @@
 
   {#events}
     <br />
-    <div class="well">
-      <h4>{name}</h4>
+    <div class="main-page">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Standard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Modern</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Legacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Vintage</a>
+        </li>
+      </ul>
     </div>
   {/events}
 {/body}
