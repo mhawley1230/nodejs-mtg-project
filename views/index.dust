@@ -10,16 +10,16 @@
     <div class="main-page">
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Standard</a>
+          <a class="nav-link active" id="standard-tab" href="#">Standard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Modern</a>
+          <a class="nav-link" id="modern-tab" href="#">Modern</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Legacy</a>
+          <a class="nav-link" id="legacy-tab" href="#">Legacy</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Vintage</a>
+          <a class="nav-link" id="vintage-tab" href="#">Vintage</a>
         </li>
       </ul>
     </div>
