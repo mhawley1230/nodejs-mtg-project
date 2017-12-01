@@ -4,9 +4,18 @@ const express = require('express'),
       cons = require('consolidate'),
       path = require('path'),
       dust = require('dustjs-helpers'),
-      { Pool } = require('pg');
+      db = require('pg'),
+      dotenv = require('dotenv/config'),
+      { Client } = require('pg');
 
 // postgres logic pool and connectionString
+const client = new Client({
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASS
+});
+client.connect();
 
 // Assign Dust Engine to .dust files
 app.engine('dust', cons.dust);
@@ -24,7 +33,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
 app.get('/', function(req, res) {
-  res.render('index');
+  client.query('SELECT * FROM events', function(err, result) {
+    if (err) {
+      return console.error('error fetching client from pool\n', err);
+    }
+    res.render('index', {events: result.rows});
+  });
 });
 
 // Server

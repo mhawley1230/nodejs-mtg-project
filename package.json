@@ -15,6 +15,7 @@
     "dust": "*",
     "dustjs-helpers": "*",
     "dustjs-linkedin": "*",
-    "pg": "*"
+    "pg": "*",
+    "dotenv": "*"
   }
 }
