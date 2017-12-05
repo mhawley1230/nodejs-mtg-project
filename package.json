@@ -10,13 +10,13 @@
   "author": "Michael Hawley",
   "license": "ISC",
   "dependencies": {
-    "express": "*",
     "body-parser": "*",
     "consolidate": "*",
-    "dust": "*",
+    "dotenv": "*",
     "dustjs-helpers": "*",
     "dustjs-linkedin": "*",
-    "pg": "*",
-    "dotenv": "*"
+    "ejs": "^2.5.7",
+    "express": "*",
+    "pg": "*"
   }
 }
