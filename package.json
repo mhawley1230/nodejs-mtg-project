@@ -17,6 +17,9 @@
     "dustjs-linkedin": "*",
     "ejs": "^2.5.7",
     "express": "*",
-    "pg": "*"
+    "pg": "*",
+    "connect": "^3.2.0",
+    "js-yaml": "^3.3.0",
+    "swagger-tools": "0.10.1"
   }
 }
