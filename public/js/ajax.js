@@ -7,7 +7,6 @@ $(document).ready(function() {
 
   $('#standard-tab').on('click', function() {
     makeActive(this);
-    
   });
 
   $('#modern-tab').on('click', function() {
